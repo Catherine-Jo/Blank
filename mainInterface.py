@@ -4,7 +4,7 @@
 # Description: This app allows users to select the type of natural disaster they believe they are experiencing. 
 # After that, it provides them with the typical warning signs and tips on what to do depending on the scenario.
 
-# - Importing the module
+# Importing the module
 import tkinter as tk
 
 # Creating the first window
@@ -13,7 +13,7 @@ root.title("Natural Disasters")
 root.geometry("400x450+550+135")
 root['bg'] = "#9DBAE6"
 
-# Title
+# Title for first window
 title_label = tk.Label(root, text="Pick a Natural Disaster", font=("Arial", 18, "bold"), bg="#9DBAE6")
 title_label.pack(pady=20)
 
@@ -27,17 +27,6 @@ disasters = [
     "Thunderstorms",
     "Tornados"
 ]
-
-# Information text for each disaster for second page
-disaster_tips = {
-    "Floods": "Move to higher ground immediately. Avoid walking or driving through flood waters.",
-    "Wildfire": "Have an evacuation plan ready. Keep emergency supplies and stay updated on alerts.",
-    "Hailstorm": "Stay indoors and away from windows. Protect your vehicle if possible.",
-    "Hurricane": "Stock up on water, food, and batteries. Follow evacuation orders early.",
-    "Blizzard": "Stay indoors, conserve heat, and avoid unnecessary travel.",
-    "Severe Thunderstorms": "Avoid tall trees and metal objects outdoors. Stay away from windows.",
-    "Tornados": "Go to a basement or interior room without windows. Protect your head."
-}
 
 # Function to open a the second window
 def open_info_window(disaster):
@@ -136,5 +125,6 @@ for disaster in disasters:
 
     select_button = tk.Button(frame, text="Select", command=lambda d=disaster: open_info_window(d))
     select_button.pack(side="right", padx=10)
+
 
 root.mainloop()
