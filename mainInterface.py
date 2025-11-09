@@ -1,7 +1,13 @@
-# - Importing the module ---------------------------------------------------------------------------
+# Name: Disaster Booklet
+# Created for the MEC 2025
+# Team Name: B1UE M00N
+# Description: This app allows users to select the type of natural disaster they believe they are experiencing. 
+# After that, it provides them with the typical warning signs and tips on what to do depending on the scenario.
+
+# - Importing the module
 import tkinter as tk
 
-# Creating the first window -------------------------------------------------------------------------
+# Creating the first window
 root = tk.Tk()
 root.title("Natural Disasters")
 root.geometry("400x450+550+135")
