@@ -1,1 +1,1 @@
-# Blank
+This app allows users to select the type of natural disaster they believe they are experiencing. After that, it provides them with tips on what to do depending on the scenario, including warning signs and suggestions on what to pack for an emergency kit.
